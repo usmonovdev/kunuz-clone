@@ -1,11 +1,14 @@
 import React from 'react'
+import { Route, Routes } from 'react-router-dom'
 import "./App.css"
-import Nav from "./components/Nav"
+import All from "./components/All";
 
 function App() {
   return (
     <>
-    <Nav />
+    <Routes>
+      <Route path='/' element={<All />} />
+    </Routes>
     </>
   )
 }
