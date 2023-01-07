@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import kunuzLogo from "../assests/kun-uz-logo.svg";
 import { RxHamburgerMenu } from "react-icons/rx"
 import { SlClose } from "react-icons/sl"
+import { AiOutlineCheckCircle } from "react-icons/ai"
 import { useState } from "react";
 
 function Nav() {
@@ -22,14 +23,14 @@ function Nav() {
             <img src={kunuzLogo} alt="Kun uz logo" />
           </Link>
           <ul className={`${seeMenu === false && "active"}`}>
-            <li className="menu-item">ЎЗБЕКИСТОН</li>
-            <li className="menu-item">ЖАҲОН</li>
-            <li className="menu-item">ИҚТИСОДИЁТ</li>
-            <li className="menu-item">Жамият</li>
-            <li className="menu-item">Фан-техника</li>
-            <li className="menu-item">Спорт</li>
-            <li className="menu-item">Business class</li>
-            <li className="menu-item">Аудио</li>
+            <li className="menu-item"><AiOutlineCheckCircle className="check"/>ЎЗБЕКИСТОН</li>
+            <li className="menu-item"><AiOutlineCheckCircle className="check"/>ЖАҲОН</li>
+            <li className="menu-item"><AiOutlineCheckCircle className="check"/>ИҚТИСОДИЁТ</li>
+            <li className="menu-item"><AiOutlineCheckCircle className="check"/>Жамият</li>
+            <li className="menu-item"><AiOutlineCheckCircle className="check"/>Фан-техника</li>
+            <li className="menu-item"><AiOutlineCheckCircle className="check"/>Спорт</li>
+            <li className="menu-item"><AiOutlineCheckCircle className="check"/>Business class</li>
+            <li className="menu-item"><AiOutlineCheckCircle className="check"/>Аудио</li>
           </ul>
           {seeMenu ? <RxHamburgerMenu className="menu" onClick={menu} /> : <SlClose className="menu" onClick={menu}/>}
         </div>
