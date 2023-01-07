@@ -183,6 +183,8 @@ img {
     font-size: 14px;
     color: var(--black);
     padding: 0 10px;
+    display: flex;
+    align-items: center;
   }
 
   .page-header ul.active ~ .menu {
@@ -234,6 +236,8 @@ img {
     font-size: 14px;
     color: var(--black);
     padding: 0 10px;
+    display: flex;
+    align-items: center;
   }
 
   .page-header ul.active ~ .menu {
