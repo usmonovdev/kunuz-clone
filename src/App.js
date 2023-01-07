@@ -1,9 +1,12 @@
 import React from 'react'
-import "./App.scss"
+import "./App.css"
+import Nav from "./components/Nav"
 
 function App() {
   return (
-    <div>App</div>
+    <>
+    <Nav />
+    </>
   )
 }
 
