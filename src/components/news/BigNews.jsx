@@ -1,15 +1,16 @@
 import React from "react";
 import { BsCalendarEvent } from "react-icons/bs";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
 
 function BigNews({ big }) {
   return (
     <>
       {big?.map((data) => {
         return (
-          <div key={data.id} className="big-news">
-            <LazyLoadImage src={data.img} alt={data.name} effect="blur" />
+          <div
+            key={data.id}
+            className="big-news"
+          >
+            <img src={data.img} alt={data.name} />
             <div className="card">
               <p className="date">
                 <BsCalendarEvent className="icon" /> {data.date}

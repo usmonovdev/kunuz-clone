@@ -183,8 +183,6 @@ img {
     font-size: 14px;
     color: var(--black);
     padding: 0 10px;
-    display: flex;
-    align-items: center;
   }
 
   .page-header ul.active ~ .menu {
@@ -236,8 +234,6 @@ img {
     font-size: 14px;
     color: var(--black);
     padding: 0 10px;
-    display: flex;
-    align-items: center;
   }
 
   .page-header ul.active ~ .menu {
@@ -724,8 +720,41 @@ img {
   .small-news .news-content {
     border-bottom: 1px solid var(--border);
     padding-left: 0;
+    padding-right: 20px;
     margin-left: 20px;
-    padding-bottom: 10px 20px 18px 0;
+    padding-top: 10px;
+    padding-bottom: 18px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .top-news-small {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .small-news img {
+    width: 117px;
+    height: 113px;
+    cursor: pointer;
+  }
+
+  .small-news {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 30px;
+    padding-right: 20px;
+  }
+
+  .small-news .news-content {
+    border-bottom: 1px solid var(--border);
+    padding-left: 0;
+    padding-right: 20px;
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 18px;
   }
 }
 
@@ -781,6 +810,20 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .recent-news {
+    width: 20%;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .recent-news {
+    width: 20%;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .recent-news {
     width: 20%;
     padding: 0 10px;
