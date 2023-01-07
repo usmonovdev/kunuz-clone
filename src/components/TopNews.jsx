@@ -26,6 +26,7 @@ function TopNews() {
           </div>
         </div>
         <div className="recent-news">
+            <h3>Сўнгги  янгиликлар</h3>
             <RecentNews recent={filterCategoryRecent()} />
         </div>
       </div>
