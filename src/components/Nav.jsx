@@ -2,8 +2,15 @@ import React from "react";
 import rek from "../assests/optimize.webp";
 import { Link } from "react-router-dom";
 import kunuzLogo from "../assests/kun-uz-logo.svg";
+import { RxHamburgerMenu } from "react-icons/rx"
+import { SlClose } from "react-icons/sl"
+import { useState } from "react";
 
 function Nav() {
+  const [seeMenu, setSeeMenu] = useState(true);
+  const menu = () => {
+    setSeeMenu(!seeMenu)
+  }
   return (
     <header>
       <div className="container">
@@ -14,7 +21,7 @@ function Nav() {
           <Link to="/" className="page-header-logo">
             <img src={kunuzLogo} alt="Kun uz logo" />
           </Link>
-          <ul>
+          <ul className={`${seeMenu == false && "active"}`}>
             <li className="menu-item">ЎЗБЕКИСТОН</li>
             <li className="menu-item">ЖАҲОН</li>
             <li className="menu-item">ИҚТИСОДИЁТ</li>
@@ -24,6 +31,7 @@ function Nav() {
             <li className="menu-item">Business class</li>
             <li className="menu-item">Аудио</li>
           </ul>
+          {seeMenu ? <RxHamburgerMenu className="menu" onClick={menu} /> : <SlClose className="menu" onClick={menu}/>}
         </div>
         <div className="countries">
           <div className="regions">Ҳудудлар</div>
