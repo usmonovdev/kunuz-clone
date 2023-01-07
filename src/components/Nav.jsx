@@ -21,7 +21,7 @@ function Nav() {
           <Link to="/" className="page-header-logo">
             <img src={kunuzLogo} alt="Kun uz logo" />
           </Link>
-          <ul className={`${seeMenu == false && "active"}`}>
+          <ul className={`${seeMenu === false && "active"}`}>
             <li className="menu-item">ЎЗБЕКИСТОН</li>
             <li className="menu-item">ЖАҲОН</li>
             <li className="menu-item">ИҚТИСОДИЁТ</li>
