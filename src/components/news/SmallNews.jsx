@@ -1,5 +1,7 @@
 import React from "react";
 import { BsCalendarEvent } from "react-icons/bs";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 function SmallNews({ small }) {
   return (
@@ -8,7 +10,7 @@ function SmallNews({ small }) {
         return (
           <div key={data.id} className="small-news">
             <div>
-              <img src={data.img} alt={data.name} />
+              <LazyLoadImage src={data.img} alt={data.name} effect="blur" />
             </div>
             <div className="news-content">
               <p className="date">
