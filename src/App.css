@@ -97,7 +97,6 @@ img {
 }
 
 /* Countries */
-
 .countries {
   background: var(--white);
   margin-bottom: 15px;
@@ -660,4 +659,28 @@ img {
 
 .footer-links li:hover {
   transform: translateY(-5px);
+}
+
+.scroll {
+  width: 40px;
+  height: 40px;
+  background-color: var(--blue);
+  opacity: .5;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.scroll:hover {
+  opacity: 1;
+}
+
+.scroll .scroll-icon {
+  font-size: 2rem;
 }
